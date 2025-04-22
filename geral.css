@@ -1,0 +1,423 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* Base para o rem */
+}
+
+body {
+  background-color: #101c2c;
+  color: #e2e8f0;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2.5rem;
+  background-color: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 0.0625rem solid #334155;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+header a {
+  color: #94a3b8;
+  margin-left: 1.875rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #c2d5dd;
+}
+
+main h1 {
+  font-size: 3.125rem;
+  color: #fff;
+  text-align: center;
+  margin: 3.75rem 0 1.25rem 0;
+}
+
+main p {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 50rem;
+  margin: 0 auto 1.875rem auto;
+  text-align: center;
+}
+
+br {
+  user-select: none;
+}
+
+div {
+  padding: 1.25rem;
+}
+
+/* Sobre mim */
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-mim-duo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.875rem;
+}
+
+.sobre-mim-texto {
+  max-width: 25rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.sobre-mim-texto h4 {
+  font-size: 1.625rem;
+  color: #38bdf8;
+}
+
+#eu {
+  width: 18.75rem;
+  border-radius: 6.25rem;
+  box-shadow: 0 0 1.25rem #6c95d1;
+}
+
+/* Ferramentas */
+.row-ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin-bottom: 3.75rem;
+}
+
+.row-ferramentas img {
+  width: 3.125rem;
+  transition: transform 0.3s;
+}
+
+.row-ferramentas img:hover {
+  transform: scale(1.2);
+}
+
+/* Projetos */
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 3.125rem 0;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 60%;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card-content {
+  transform: rotateX(0deg);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover  img {
+  scale: 0;
+}
+
+.card-description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* Contatos */
+main #contatos {
+  margin-top: 3.75rem;
+}
+
+main #contatos img {
+  width: 2.5rem;
+  margin: 0.625rem;
+  transition: transform 0.3s;
+}
+
+.contato-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contato-form form {
+  width: 100%;
+  max-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: stretch;
+}
+
+.contato-form label {
+  margin: 0.625rem 0 0.3125rem;
+  font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 0.75rem;
+  border: 0.0625rem solid #807d7d;
+  border-radius: 0.3125rem;
+  resize: vertical;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contato-form button {
+  margin-top: 1.25rem;
+  padding: 0.875rem;
+  background-color: #334155;
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contato-form button:hover {
+  background-color: #455468;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #0f172a;
+  border-top: 0.0625rem solid #334155;
+  margin-top: 3.75rem;
+}
+
+footer h2 {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+#whatsapp {
+  display: flex;
+  background-color: #32d951;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.3125rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsapp img {
+  width: 6.25rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 550px) {
+
+  /* Header */
+  header {
+    padding: 0.50rem 1rem;
+    border-bottom: 0.0625rem solid #334155;
+    flex-wrap: wrap;
+  }
+
+  header h2 {
+    font-size: 1.10rem;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header a {
+    font-weight: 500;
+    margin: 0px;
+    font-size: 0.80rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+
+  div {
+    padding: 0.50rem;
+  }
+
+  /* Sobre mim */
+  .sobre-mim-duo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .sobre-mim-texto {
+    max-width: 25rem;
+    padding: 1rem;
+  }
+
+  #eu {
+    width: 8rem;
+    border-radius: 2rem;
+  }
+
+  /* Ferramentas */
+  .row-ferramentas {
+    gap: 1.875rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .row-ferramentas img {
+    width: 2.125rem;
+  }
+  
+  /* Projetos */
+  .projetos {
+    gap: 1.300rem;
+    margin: 2.125rem 0;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    perspective: 900px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    width: 60%;
+  }
+  
+  .card-content {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .card-description {
+    margin: 5px 0 0;
+    font-size: 0.70rem;
+    color: #777;
+    line-height: 1.4;
+  }
+
+  /* Contatos */
+  .social a{
+    right: 10px;
+  }
+
+main #contatos {
+  margin-top: 2.75rem;
+}
+
+.contato-form form {
+  width: 80%;
+  max-width: 37.5rem;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 0.35rem;
+  font-size: 0.90rem;
+}
+
+.contato-form button {
+  padding: 0.375rem;
+  background-color: #334155;
+  font-size: 0.90rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+}
+
+footer h2 {
+  font-size: 0.90rem;
+  color: #94a3b8;
+}
+.social a{
+  right: 10px !important;
+}
+}
