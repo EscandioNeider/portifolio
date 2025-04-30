@@ -12,9 +12,9 @@ Há 1 projeto aqui.
 
 ### ✨ Melhorias e Atualizações:
 
-- Inserção de um projeto;
-- Agora é possível enviar emails para mim;
-
+- Inserção de projetos;
+- Minhas Formações;
+- Seta para voltar ao topo da página;
 ---
 
 🔗 Acesse meu portfólio: [Clique aqui para visitar meu portfólio](https://escandioneider.github.io/portifolio/)
