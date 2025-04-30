@@ -92,7 +92,7 @@ div {
 }
 
 .sobre-mim-texto h4 {
-  font-size: 1.625rem;
+  font-size: 1.825rem;
   color: #38bdf8;
 }
 
@@ -121,7 +121,7 @@ div {
 }
 
 /* Projetos */
-.projetos {
+.projetos, .formacao{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -129,10 +129,14 @@ div {
   margin: 3.125rem 0;
 }
 
+.formacao img{
+  width: 30%;
+}
+
 .card {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
   background-color: #455468;
   border-radius: 10px;
   display: flex;
@@ -188,6 +192,26 @@ div {
   font-size: 14px;
   color: #ffffff;
   line-height: 1.4;
+}
+
+#voltarTopo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 60%;
+  background-color: #ffffff93;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+
+#voltarTopo:hover{
+  background-color: #f8f8f8c7;
+
 }
 
 /* Contatos */
